@@ -11,9 +11,9 @@ __Author__ = 'Negoo_wen'
 from aip import AipOcr
 
 """ 你的 APPID AK SK """
-APP_ID = '18970'
-API_KEY = 'bpWmrfhg'
-SECRET_KEY = 'NolrGqvG0N8D4E8D'
+APP_ID = '18'
+API_KEY = 'bpW'
+SECRET_KEY = 'Nol'
 
 
 def get_file_content(filePath):
@@ -27,10 +27,10 @@ def main():
     options["language_type"] = "CHN_ENG"
     options["detect_direction"] = "true"
     options["detect_language"] = "true"
-    options["probability"] = "true"
+    options["probability"] = "false"
 
     # 本地图片识别
-    image = get_file_content('Snipast1.png')
+    image = get_file_content('jingo.png')
     result = client.basicGeneral(image, options)
 
     # 网络图片识别
